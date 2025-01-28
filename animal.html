@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landscape - Photography Website</title>
+<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" rel="stylesheet" type="text/css" >
+
+<script>
+
+    function openOverlay(imageSrc) {
+      const overlay = document.getElementById("overlay");
+      const overlayImg = document.getElementById("overlay-img");
+      const downloadBtn = document.getElementById("download-btn");
+
+      overlayImg.src = imageSrc;
+      overlay.style.display = "flex";
+      downloadBtn.href = imageSrc; 
+    }
+
+    function closeOverlay() {
+      const overlay = document.getElementById("overlay");
+      overlay.style.display = "none";
+    }
+
+ </script>
+ 
+</head>
+
+<body>
+  <header>
+    <h1>WILDLIFE</h1>
+	
+  </header>
+  
+  
+  
+  
+  
+  <nav>
+  <ul class="menu">
+    <li><a href="photo.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact1.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+
+
+
+ <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <img id="overlay-img" src="">
+      <a id="download-btn" href="#" download="image.jpg">
+        <button>Download</button>
+      </a>
+      <span class="close" id="close" onclick="closeOverlay()">&times;</span>
+    </div>
+  </div>
+  
+  
+  
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="photo-gallery">
+      <div class="photo">
+        <a href="#"><img src="IMG_1427.jpg" alt="Photo 1" onclick="openOverlay('IMG_1427.jpg')"></a>
+      </div>
+      <div class="photo">
+        <img src="IMG_1428.jpg" alt="Photo 2" onclick="openOverlay('IMG_1428.jpg')">
+      </div>
+      <div class="photo">
+        <img src="IMG_1429.jpg" alt="Photo 3" onclick="openOverlay('IMG_1429.jpg')">
+      </div>
+	  <div class="photo">
+        <img src="IMG_1429.jpg" alt="Photo 3" onclick="openOverlay('IMG_1429.jpg')">
+      </div>
+    </div>
+
+	 <div class="photo-gallery">
+      <div class="photo">
+        <img src="IMG_1616.jpg" alt="Photo 1" onclick="openOverlay('IMG_1616.jpg')" >
+      </div>
+      <div class="photo">
+        <img src="sky-2.jpg" alt="Photo 2" onclick="openOverlay('sky-2.jpg')">
+      </div>
+      <div class="photo">
+        <img src="IMG_1617.jpg" alt="Photo 3" onclick="openOverlay('IMG_1617.jpg')">
+      </div>
+	 </div>
+	 
+	</div>
+	  
+	 
+	 
+	<div class="search-box">
+    <form>
+      <input type="text" placeholder="Search Keyword...">
+      <button type="submit">Go</button>
+    </form>
+    </div>
+	
+	<div class="top-right-buttons">
+  <a href="signup.html" class="signup-button">Sign Up</a>
+  <a href="signin.html" class="signin-button">Sign In</a>
+</div>
+  
+<footer>
+    <p>&copy; 2023 Photography Portfolio. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>
