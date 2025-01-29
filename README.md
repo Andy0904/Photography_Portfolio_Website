@@ -1,3 +1,3 @@
-# Photography-Portfolio-Websitr
+# Photography-Portfolio-Website
 
 website
