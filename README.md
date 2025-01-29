@@ -1,3 +1,3 @@
 # Photography-Portfolio-Website
-Start with PHOTOS.html
+Start with PHOTO.html
 website
